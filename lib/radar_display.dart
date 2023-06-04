@@ -35,7 +35,7 @@ class _RadarDisplayState extends State<RadarDisplay> {
               compassData == null || compassData.data == null
                   ? 0
                   : compassData.data!.turns * -1;
-          const double size = 300;
+          const double size = 400; // Размер радара
           return Container(
             decoration: const BoxDecoration(
                 gradient: LinearGradient(
@@ -81,12 +81,12 @@ class _RadarDisplayState extends State<RadarDisplay> {
                         const Center(
                             child: DirectionaArc(
                                 size: 100,
-                                color: Color.fromARGB(255, 76, 144, 201))),
+                                color: Color.fromARGB(255, 76, 144, 201))),// Отрисовывает направление человека
                         AnimatedRotation(
                           turns: animationTurns,
                           duration: Duration(milliseconds: _animationDuration),
                           child:
-                              const MarkerDisplay(size: size, zoomLevel: 1),
+                              const MarkerDisplay(size: size, zoomLevel: 2),
                         ),
                       ],
                     ),

@@ -18,7 +18,7 @@ class DirectionaArc extends StatelessWidget {
           stops: [0.3, 0.7],
           colors: [Colors.white, Colors.transparent]).createShader(bounds),
       child: CustomPaint(
-        painter: MyPainter(color: color),
+        painter: MyPainter(color: color), // отрисовывает направление
         size: const Size(200, 200),
       ),
     );

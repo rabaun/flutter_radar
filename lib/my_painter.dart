@@ -16,7 +16,7 @@ class MyPainter extends CustomPainter {
             height: size.height),
         (180 + 45) * math.pi / 180,
         90 * math.pi / 180,
-        true,
+        true, // Направление человека
         paint);
   }
 
